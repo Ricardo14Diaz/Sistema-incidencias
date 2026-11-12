@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema de Registro de Incidencias</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Registro de Incidencias</h1>
+
+    <section class="card">
+      <h2>Nueva incidencia</h2>
+      <form id="form-incidencia">
+        <input id="titulo" placeholder="Título" required>
+        <textarea id="descripcion" placeholder="Descripción" required></textarea>
+        <select id="estado">
+          <option>Abierta</option>
+          <option>En proceso</option>
+          <option>Cerrada</option>
+        </select>
+        <button type="submit">Registrar</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Listado de incidencias</h2>
+      <ul id="lista"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
