@@ -4,7 +4,9 @@ main { max-width: 720px; margin: 2rem auto; padding: 0 1rem; }
         margin-bottom: 1rem; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
 input, textarea, select, button { width: 100%; padding: .5rem;
         margin-bottom: .6rem; box-sizing: border-box; }
-button { background: #1f6feb; color: #fff; border: 0; border-radius: 4px; cursor: pointer; }
+button { background: #1f6feb; color: #fff; border: 0; border-radius: 4px; cursor: pointer; transition: background .2s ease, transform .2s ease; }
+button:hover { background: #1859c5; transform: translateY(-1px); }
+input:focus, textarea:focus, select:focus { outline: 2px solid #9ec0ff; border-color: #1f6feb; }
 ul { list-style: none; padding: 0; }
 li { border-bottom: 1px solid #ddd; padding: .6rem 0; }
 .estado { float: right; font-size: .8rem; background: #e7eefc; padding: 2px 8px; border-radius: 10px; }
