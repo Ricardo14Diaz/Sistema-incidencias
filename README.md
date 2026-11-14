@@ -17,9 +17,10 @@ Su objetivo es aplicar los principios de gestión de versiones, control de cambi
 - Búsqueda dinámica de incidencias por título.
 - Validación de campos obligatorios.
 - Prevención del registro de títulos y descripciones que contienen únicamente espacios.
+- Persistencia local de incidencias entre recargas del navegador.
 - Publicación automática mediante GitHub Actions y GitHub Pages.
 
-Nota: Los registros se almacenan temporalmente en memoria y desaparecen al recargar la página.
+Nota: Las incidencias se guardan en el almacenamiento local del navegador actual; no se sincronizan entre dispositivos ni usuarios.
 
 ## Tecnologías utilizadas
 
@@ -72,7 +73,7 @@ El proyecto utiliza la rama principal `main` y ramas de trabajo para desarrollar
 |---|---|
 | main | Versión principal y estable del proyecto |
 | feature/version-inicial | Desarrollo inicial del sistema |
-| Steven | Mejoras de estilos y corrección de referencia CSS |
+| Steven | Mejoras de estilos, corrección de CSS y persistencia local de incidencias |
 | feature/buscador-incidencias | Implementación de búsqueda dinámica |
 | fix/validacion-campos | Corrección de campos vacíos |
 | feature/deploy-pages | Automatización del despliegue |
