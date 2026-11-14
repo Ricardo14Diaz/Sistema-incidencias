@@ -34,14 +34,24 @@ function mostrar() {
 
 buscar.addEventListener("input", mostrar);
 
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
+  const titulo = document.getElementById("titulo").value.trim();
+  const descripcion = document.getElementById("descripcion").value.trim();
+  const estado = document.getElementById("estado").value;
+
+  if (!titulo || !descripcion) {
+    alert("El título y la descripción no pueden estar vacíos.");
+    return;
+  }
+
   incidencias.push({
     id: incidencias.length + 1,
-    titulo: document.getElementById("titulo").value,
-    descripcion: document.getElementById("descripcion").value,
-    estado: document.getElementById("estado").value,
+    titulo,
+    descripcion,
+    estado,
   });
 
   form.reset();
